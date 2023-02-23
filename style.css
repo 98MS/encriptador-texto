@@ -1,0 +1,91 @@
+*{ /* el * es usado para que todo tenga este estilo, va al principio para que despues podamos editar en cada elemento por orden de ejecucion*/
+    background: black;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+}
+
+.logo{
+    padding-top: 10px;
+    margin-left: 10px;
+    width: 7%;
+}
+
+main{
+    display: flex;
+    margin-bottom: 50px;
+    margin-left: 80px;
+}
+
+.text-area{
+    resize: none; /*para quitar el cosito que deja que se expanda el textarea*/
+    border: none;
+    color: #0A3871;
+    margin-top: 90px;
+    text-transform: lowercase; /*el texto escrito sera simepre en minusculas aunque se tenga activado lo contrario en el teclado*/
+}
+::placeholder{color: #0A3871;} /*sigue siendo propiedad en el text-area de arriba, la semantica correcta pareciaera ser esta*/
+    .text-area:focus {
+        outline: none; /*el focus es cuando uno selecciona el text area, automaticamente el borde se resalta como un bold en texto. esto se conoce como outline, por ello, definimos el outline en el focus como none*/
+    }
+
+.mensaje{
+    resize: none;
+    background: darkgray;
+    background-image: url(imagenes/Muneco.png); /*cuando la imagen es pequeña en comparacion con elk cuadro a rellenar, se repite la imagen*/
+    background-repeat: no-repeat; /*asi entonces no se repetira la imagen*/
+    border: none;
+    border-radius: 24px;
+    color: #0A3871; /*recuerda, siempre se trata del color de la letra cuando es 'color'*/
+    margin-left: 98px;
+    margin-top: 20px;
+    padding-left: 20px;
+    position: absolute; /*o fixed, hay que hacer pruebas*/
+    width: 400px;
+    height: 800px;
+}
+
+.botones{
+    display: flex;
+    margin-top: 18px;
+
+}
+
+.btn-desencriptar{
+    background: #D8DFE8;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    color: #0A3871;
+    cursor: pointer;
+    height: 67px;
+    margin-left: 30px;
+    width: 328px;
+}
+
+.btn-encriptar{
+    background-color: #0A3871;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    color: white;
+    cursor: pointer;
+    height: 67px;
+    width: 328px;
+}
+
+.btn-copiar{
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    color: #0A3871;
+    cursor: pointer;
+    height: 67px;
+    margin-left: 108px;
+    margin-top: 402px;
+    position: absolute;
+    width: 328px;
+}
+ 
+.informacion{
+    color: #495057;
+    font-size: 18px;
+}
